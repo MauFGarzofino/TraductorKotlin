@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "978125172138",
+    "project_id": "sis145-grupo7",
+    "storage_bucket": "sis145-grupo7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978125172138:android:1317a883293d9f58368fd3",
+        "android_client_info": {
+          "package_name": "com.mau.basededatos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6CFw43vBDp9wjo0ACm2jwL1pzijP9Xqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BaseDeDatos</string>
+    <string name="login">INICIAR SESION</string>
+    <string name="password">Contraseña</string>
+    <string name="email">Email</string>
+    <string name="register">REGISTRARSE</string>
+    <string name="click_to_login">INICIAR SESIÓN</string>
+    <string name="click_to_register">REGISTRARSE</string>
+    <string name="logout">CERRAR SESIÓN</string>
+    <string name="reg_strate">REGISTRARSE</string>
+
+    <string name="work">Traductor</string>
+    <string name="vocabulario">Vocabulario</string>
+    <string name="historial">Historial</string>
+    <string name="juegos">Juegos</string>
+</resources>
