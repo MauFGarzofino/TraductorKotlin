@@ -7,6 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="15dp"
+    android:background="@color/cardview_dark_background"
     tools:context=".Login">
 
     <TextView
@@ -16,6 +17,7 @@
         android:gravity="center"
         android:text="@string/login"
         android:textSize="25sp"
+        android:textColor="@color/white"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -26,6 +28,8 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@color/white"
             android:hint="@string/email" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -38,6 +42,8 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@color/white"
             android:hint="@string/password" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -53,12 +59,14 @@
         android:id="@+id/btn_login"
         android:layout_width="168dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/login" />
 
     <Button
         android:id="@+id/btn_reg_now"
         android:layout_width="169dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/material_on_surface_stroke"
         android:text="@string/reg_strate" />
 
 </LinearLayout>
