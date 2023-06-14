@@ -34,6 +34,7 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp" >
                 <LinearLayout
+                    android:id="@+id/translator"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp"
@@ -64,6 +65,7 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp" >
                 <LinearLayout
+                    android:id="@+id/vocabulary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp"
@@ -101,6 +103,7 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp" >
                 <LinearLayout
+                    android:id="@+id/record"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp"
@@ -131,6 +134,7 @@
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp" >
                 <LinearLayout
+                    android:id="@+id/games"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp"
