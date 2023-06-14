@@ -49,28 +49,30 @@ class Login : AppCompatActivity() {
             val password = editTextPassword.text.toString()
 
             if (email.isEmpty()) {
-                Toast.makeText(this@Login, "Introduce email", Toast.LENGTH_SHORT).show()
-                val intent= Intent(this@Login, Login::class.java)
+                Toast.makeText(this@Login, "Introduce el email", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+                /*val intent= Intent(this@Login, Login::class.java)
                 startActivity(intent)
-                finish()
+                finish()*/
             }
 
             if (password.isEmpty()) {
-                Toast.makeText(this@Login, "Introduce password", Toast.LENGTH_SHORT).show()
-                val intent= Intent(this@Login, Login::class.java)
+                Toast.makeText(this@Login, "Introduce la contraseña", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+                /*val intent= Intent(this@Login, Login::class.java)
                 startActivity(intent)
-                finish()
+                finish()*/
             }
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     progressBar.visibility = View.GONE
                     if (task.isSuccessful) {
-                        Toast.makeText(baseContext, "login successful", Toast.LENGTH_SHORT,).show()
+                        Toast.makeText(baseContext, "Sesión Iniciada", Toast.LENGTH_SHORT,).show()
                         val intent= Intent(this@Login, UI::class.java)
                         startActivity(intent)
                         finish()
                     } else {
-                        Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT,).show()
+                        Toast.makeText(baseContext, "La autenticación falló", Toast.LENGTH_SHORT,).show()
                     }
                 }
         }
