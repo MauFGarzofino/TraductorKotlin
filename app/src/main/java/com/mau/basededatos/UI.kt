@@ -20,7 +20,7 @@ class UI : AppCompatActivity() {
         bJuegos = findViewById(R.id.games)
 
         bTraductor.setOnClickListener {
-            val intent = Intent(this@UI, MainActivity::class.java)
+            val intent = Intent(this@UI, VistaTraductor::class.java)
             startActivity(intent)
         }
         bVocabulario.setOnClickListener {
