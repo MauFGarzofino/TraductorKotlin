@@ -29,7 +29,7 @@ class VistaTraductor : AppCompatActivity() {
 
     companion object{
         //para imprimir logs
-        private const val TAG = "MAIN_TAG"
+        private const val TAG = "M  AIN_TAG"
     }
 
     //
@@ -105,7 +105,6 @@ class VistaTraductor : AppCompatActivity() {
             .requireWifi()
             .build()
 
-
         translator.downloadModelIfNeeded(downloadConditions)
             .addOnSuccessListener {
                 Log.d(TAG, "iniciarTraduccion: modelo listo, iniciar traduccion")
@@ -155,6 +154,9 @@ class VistaTraductor : AppCompatActivity() {
     private fun sourceLanguageChoose(){
 
         val popupMenu = PopupMenu(this, idiomaBaseSeleccionBtn)
+
+        val sourceLanguageText = idiomaBaseSeleccionBtn.text.toString()
+        Log.d(TAG, "sourceLanguageChoose: IdiomaBase: $sourceLanguageText")
 
         for(i in languageArrayList!!.indices){
 

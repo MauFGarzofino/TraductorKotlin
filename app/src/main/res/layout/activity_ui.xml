@@ -45,7 +45,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/english"/>
+                        android:src="@drawable/translate"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -76,7 +76,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_launcher_foreground"/>
+                        android:src="@drawable/dictionary"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -114,7 +114,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/spain"/>
+                        android:src="@drawable/chat"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -147,7 +147,7 @@
                         android:layout_width="133dp"
                         android:layout_height="97dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/icon" />
+                        android:src="@drawable/practice" />
 
                     <TextView
                         android:layout_width="match_parent"
