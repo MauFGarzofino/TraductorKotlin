@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BaseDeDatos</string>
+    <string name="app_name">App de Idiomas</string>
     <string name="login">INICIAR SESION</string>
     <string name="password">Contraseña</string>
     <string name="email">Email</string>
