@@ -27,6 +27,8 @@ class VistaTraductor : AppCompatActivity() {
     private lateinit var idiomaTraducidoSeleccionBtn: MaterialButton
     private lateinit var traducirBtn: MaterialButton
 
+
+
     companion object{
         //para imprimir logs
         private const val TAG = "MAIN_TAG"
