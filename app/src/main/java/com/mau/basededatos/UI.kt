@@ -32,7 +32,7 @@ class UI : AppCompatActivity() {
             startActivity(intent)
         }
         bJuegos.setOnClickListener {
-            val intent = Intent(this@UI, MainActivity::class.java)
+            val intent = Intent(this@UI, Quiz::class.java)
             startActivity(intent)
         }
     }

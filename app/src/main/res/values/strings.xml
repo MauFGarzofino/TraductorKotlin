@@ -13,4 +13,69 @@
     <string name="vocabulario">Vocabulario</string>
     <string name="historial">Historial</string>
     <string name="juegos">Quiz</string>
+
+
+    <!--- Preguntas del Quiz -->
+    <string name="score">Puntuación 0/8</string>
+    <string name="question_number">Pregunta 1/8</string>
+
+    <string name="question_1">Fill in the blank with the appropriate preposition: "She lives ____ New York City."</string>
+    <string name="question1_A">in</string>
+    <string name="question1_B">at</string>
+    <string name="question1_C">on</string>
+    <string name="question1_D">by</string>
+    <string name="answer_1">in</string>
+
+    <string name="question_2">Which word is the plural form of "child"?</string>
+    <string name="question_2A">child´s</string>
+    <string name="question_2B">children</string>
+    <string name="question_2C">childes</string>
+    <string name="question_2D">childs</string>
+    <string name="answer_2">children</string>
+
+    <string name="question_3">Identify the correct past tense of the verb "go":</string>
+    <string name="question_3A">goed</string>
+    <string name="question_3B">went</string>
+    <string name="question_3C">goed</string>
+    <string name="question_3D">goned</string>
+    <string name="answer_3">went</string>
+
+    <string name="question_4">Identify the correct plural form of the noun "mouse":</string>
+    <string name="question_4A">mouses</string>
+    <string name="question_4B">mices</string>
+    <string name="question_4C">mouses</string>
+    <string name="question_4D">mice</string>
+    <string name="answer_4">mice</string>
+
+    <string name="question_5">Fill in the blank with the appropriate preposition: "He is interested ____ learning French."</string>
+    <string name="question_5A">in</string>
+    <string name="question_5B">at</string>
+    <string name="question_5C">on</string>
+    <string name="question_5D">by</string>
+    <string name="answer_5">in</string>
+
+    <string name="question_6">Choose the correct synonym for the word "happy":</string>
+    <string name="question_6A">sad</string>
+    <string name="question_6B">angry</string>
+    <string name="question_6C">joyful</string>
+    <string name="question_6D">tired</string>
+    <string name="answer_6">joyful</string>
+
+    <string name="question_7">Complete the sentence with the appropriate article: "I saw ___ movie last night."</string>
+    <string name="question_7A">a</string>
+    <string name="question_7B">an</string>
+    <string name="question_7C">the</string>
+    <string name="question_7D">no article needed</string>
+    <string name="answer_7">a</string>
+
+    <string name="question_8">Identify the correct spelling of the color: "purple"</string>
+    <string name="question_8A">purlpe</string>
+    <string name="question_8B">puple</string>
+    <string name="question_8C">purple</string>
+    <string name="question_8D">purpul</string>
+    <string name="answer_8">purple</string>
+
+    <string name="selctedoption">SelctedOption</string>
+    <string name="correctanswer">CorrectAnswer</string>
+
 </resources>
