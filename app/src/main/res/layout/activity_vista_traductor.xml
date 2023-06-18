@@ -64,7 +64,7 @@
             app:cornerRadius="10dp"/>
 
         <ImageView
-            android:src="@drawable/arrow"
+            android:src="@drawable/translate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

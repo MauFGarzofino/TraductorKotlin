@@ -69,7 +69,11 @@
             android:textColor="#ffffff"
             android:id="@+id/question"
             android:text="@string/question_1"
-            android:textSize="25sp">
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowRadius="@integer/material_motion_duration_short_2"
+            >
 
         </TextView>
 
