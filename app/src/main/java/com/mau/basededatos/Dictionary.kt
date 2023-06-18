@@ -6,6 +6,8 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.SearchView
 import com.google.firebase.database.*
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class Dictionary : AppCompatActivity() {
 
