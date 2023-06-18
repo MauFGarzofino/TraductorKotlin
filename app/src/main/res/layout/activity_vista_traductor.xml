@@ -56,17 +56,18 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:textSize="12sp"
-            android:text="Spanish"
+            android:text="Idioma base"
             android:backgroundTint="@color/design_default_color_background"
             android:textColor="@color/black"
             android:gravity="center"
+
             android:layout_weight="1"
             app:cornerRadius="10dp"/>
 
         <ImageView
-            android:src="@drawable/translate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/flecha" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/targetLanguageChooseBtn"
@@ -78,7 +79,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/design_default_color_background"
             android:textColor="@color/black"
-            android:text="English"
+            android:text="Elegir Idioma"
             app:cornerRadius="10dp" />
     </LinearLayout>
 
