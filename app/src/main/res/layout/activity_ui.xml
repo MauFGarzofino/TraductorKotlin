@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:gravity="center_horizontal"
     android:layout_height="match_parent"
+    android:background  ="#1C1C1C "
     android:orientation="vertical"
     tools:context=".UI">
 
@@ -31,14 +32,16 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="22dp"
                 app:cardElevation="5dp" >
                 <LinearLayout
                     android:id="@+id/translator"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
                     android:paddingTop="20dp"
                     android:paddingBottom="20dp"
+                    android:backgroundTint="#2F4858"
                     android:gravity="center"
                     android:orientation="vertical"
                     >
@@ -62,12 +65,14 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="22dp"
                 app:cardElevation="5dp" >
                 <LinearLayout
                     android:id="@+id/vocabulary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="#2F4858"
                     android:paddingTop="20dp"
                     android:paddingBottom="20dp"
                     android:gravity="center"
@@ -100,12 +105,14 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="22dp"
                 app:cardElevation="5dp" >
                 <LinearLayout
                     android:id="@+id/record"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="#2F4858"
                     android:paddingTop="20dp"
                     android:paddingBottom="20dp"
                     android:gravity="center"
@@ -132,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="22dp"
                 app:cardElevation="5dp" >
 
                 <LinearLayout
@@ -142,6 +149,8 @@
                     android:gravity="center"
                     android:orientation="vertical"
                     android:paddingTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="#2F4858"
                     android:paddingBottom="20dp">
 
                     <ImageView
@@ -181,7 +190,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:layout_marginTop="10dp"
-            android:text="@string/logout"
+            android:text="Cerrar Sesión"
             android:textAlignment="center"/>
 
 
