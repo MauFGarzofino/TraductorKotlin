@@ -40,7 +40,7 @@ public class Register : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
 
-        buttonLiciniaSession.setOnClickListener { view ->
+        buttonLiciniaSession.setOnClickListener {view ->
             val intent = Intent(this@Register, Login::class.java)
             startActivity(intent)
             finish()
