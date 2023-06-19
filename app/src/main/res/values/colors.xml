@@ -9,21 +9,21 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#8692F7</color>
 
-    -----
-    <color name="color_primary">#3F51B5</color>
-    <color name="color_primary_variant">#303F9F</color>
-    <color name="color_secondary">#FF4081</color>
-    <color name="color_secondary_variant">#F50057</color>
-    <color name="color_background">#212121</color>
-    <color name="color_surface">#424242</color>
-    <color name="color_on_primary">#FFFFFF</color>
-    <color name="color_on_secondary">#FFFFFF</color>
-    <color name="color_on_background">#FFFFFF</color>
-    <color name="color_on_surface">#FFFFFF</color>
 
     -----
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+
+    ---------
+    <color name="color_primary_variant">#3F5C70</color>
+    <color name="color_secondary">#48687C</color>
+    <color name="color_secondary_variant">#567D94</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_on_background">#FFFFFF</color>
+    <color name="color_on_surface">#FFFFFF</color>
+
 
 </resources>
