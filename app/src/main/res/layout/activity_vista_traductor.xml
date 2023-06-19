@@ -23,8 +23,8 @@
                 android:id="@+id/regresar"
                 android:layout_width="72dp"
                 android:layout_height="58dp"
-                android:layout_gravity="right"
-                app:srcCompat="@drawable/back" />
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/ret" />
 
             <EditText
                 android:id="@+id/lenguajeFuente"
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:textSize="12sp"
-            android:text="Idioma base"
+            android:text="Select. Idioma"
             android:backgroundTint="#2F4858"
             android:gravity="center"
 
@@ -73,9 +73,11 @@
             app:cornerRadius="10dp"/>
 
         <ImageView
-            android:layout_width="50dp"
+            android:layout_width="30dp"
             android:layout_height="50dp"
-            android:src="@drawable/flecha" />
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/trans" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/targetLanguageChooseBtn"
@@ -86,7 +88,7 @@
             android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:backgroundTint="#2F4858"
-            android:text="Elegir Idioma"
+            android:text="Select. Idioma"
             app:cornerRadius="10dp" />
     </LinearLayout>
 
