@@ -35,6 +35,9 @@
             android:name=".VistaTraductor"
             android:exported="false" />
         <activity
+            android:name=".Dictionary"
+            android:exported="false" />
+        <activity
             android:name=".Traductor"
             android:exported="false" />
         <activity
