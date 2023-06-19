@@ -19,6 +19,7 @@ class Dictionary : AppCompatActivity() {
 
     private val db = FirebaseFirestore.getInstance()
     private val dictionaryCollection = db.collection("dictionary")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dictionary)
