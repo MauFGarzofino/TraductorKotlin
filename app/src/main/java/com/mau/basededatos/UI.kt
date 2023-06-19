@@ -28,7 +28,7 @@ class UI : AppCompatActivity() {
             startActivity(intent)
         }
         bVocabulario.setOnClickListener {view ->
-            val intent = Intent(this@UI, MainActivity::class.java)
+            val intent = Intent(this@UI, Dictionary::class.java)
             startActivity(intent)
         }
         bHist.setOnClickListener {view ->
