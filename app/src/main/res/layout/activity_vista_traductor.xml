@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:textSize="12sp"
-            android:text="Select. Idioma"
+            android:text="Español"
             android:backgroundTint="#2F4858"
             android:gravity="center"
 
@@ -88,7 +88,7 @@
             android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:backgroundTint="#2F4858"
-            android:text="Select. Idioma"
+            android:text="Inglés"
             app:cornerRadius="10dp" />
     </LinearLayout>
 
