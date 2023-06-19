@@ -69,6 +69,7 @@ class Login : AppCompatActivity() {
                     if (task.isSuccessful) {
                         Toast.makeText(baseContext, "Sesion Iniciada", Toast.LENGTH_SHORT,).show()
                         val intent= Intent(this@Login, UI::class.java)
+                        intent.putExtra("Usuario",editTextEmail.text.toString())
                         startActivity(intent)
                         finish()
                     } else {

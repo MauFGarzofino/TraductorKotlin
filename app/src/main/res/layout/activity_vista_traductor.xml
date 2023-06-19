@@ -23,21 +23,26 @@
                 android:id="@+id/regresar"
                 android:layout_width="72dp"
                 android:layout_height="58dp"
-                android:layout_gravity="left"
-                app:srcCompat="@drawable/ret" />
+                app:srcCompat="@drawable/ret"
+                android:importantForAccessibility="no" />
 
-            <EditText
-                android:id="@+id/lenguajeFuente"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/custom_edittext"
-                android:gravity="top"
-                android:minHeight="100dp"
-                android:layout_marginTop="2dp"
-                android:padding="10dp"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:layout_height="wrap_content">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lenguajeFuente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/custom_edittext"
+                    android:gravity="top"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    android:hint="nombre"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
             <TextView
                 android:id="@+id/targetLanguageTv"
                 android:layout_width="match_parent"
@@ -77,7 +82,8 @@
             android:layout_height="50dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/trans" />
+            android:src="@drawable/trans"
+            android:importantForAccessibility="no" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/targetLanguageChooseBtn"

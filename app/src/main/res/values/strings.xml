@@ -77,5 +77,6 @@
 
     <string name="selctedoption">SelctedOption</string>
     <string name="correctanswer">CorrectAnswer</string>
+    <string name="name">name</string>
 
 </resources>

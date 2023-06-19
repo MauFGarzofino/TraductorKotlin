@@ -48,19 +48,23 @@ class MainActivity : AppCompatActivity() {
         recyclerview.layoutManager = LinearLayoutManager(this)
         val data = ArrayList<ItemsViewModel>()
 
-        db.collection("users")
-            .get()
-            .addOnSuccessListener { result ->
-                for (document in result) {
-                    data.add(ItemsViewModel("Clientes",document.data.get("direccion").toString()))
-                    data.add(ItemsViewModel("Clientes",document.data.get("telef").toString()))
-                    Log.d(TAG, "${document.id} => ${document.data}")
+        val bundle=intent.extras
+        val user= bundle?.getString("Usuario")
+
+        if (user != null) {
+            db.collection(user)
+                .get()
+                .addOnSuccessListener { result ->
+                    for (document in result) {
+                        data.add(ItemsViewModel(document.data.get("Traducir").toString(),document.data.get("Traducido").toString()))
+                        Log.d(TAG, "${document.id} => ${document.data}")
+                    }
+                    val adapter = CustomAdapter(data)
+                    recyclerview.adapter = adapter
                 }
-                val adapter = CustomAdapter(data)
-                recyclerview.adapter = adapter
-            }
-            .addOnFailureListener { exception ->
-                Log.w(TAG, "Error getting documents.", exception)
-            }
+                .addOnFailureListener { exception ->
+                    Log.w(TAG, "Error getting documents.", exception)
+                }
+        }
     }
 }

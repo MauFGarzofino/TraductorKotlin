@@ -23,8 +23,12 @@ class UI : AppCompatActivity() {
         bJuegos = findViewById(R.id.games)
         bsalirCuenta = findViewById(R.id.logout)
 
+        val bundle=intent.extras
+        val user= bundle?.getString("Usuario")
+
         bTraductor.setOnClickListener {view ->
             val intent = Intent(this@UI, VistaTraductor::class.java)
+            intent.putExtra("Usuario",user)
             startActivity(intent)
         }
         bVocabulario.setOnClickListener {view ->
@@ -33,6 +37,7 @@ class UI : AppCompatActivity() {
         }
         bHist.setOnClickListener {view ->
             val intent = Intent(this@UI, MainActivity::class.java)
+            intent.putExtra("Usuario",user)
             startActivity(intent)
         }
         bJuegos.setOnClickListener {view ->
