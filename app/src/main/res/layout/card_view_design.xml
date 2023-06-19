@@ -20,5 +20,21 @@
             android:text="Item"
             android:textSize="20sp"
             android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="="
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Item"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

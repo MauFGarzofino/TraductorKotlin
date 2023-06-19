@@ -13,11 +13,13 @@ import android.widget.PopupMenu
 import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.button.MaterialButton
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.mlkit.common.model.DownloadConditions
 import com.google.mlkit.nl.translate.TranslateLanguage
 import com.google.mlkit.nl.translate.Translation
 import com.google.mlkit.nl.translate.Translator
 import com.google.mlkit.nl.translate.TranslatorOptions
+import com.mau.basededatos.databinding.ActivityVistaTraductorBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -29,6 +31,7 @@ class VistaTraductor : AppCompatActivity() {
     private lateinit var idiomaTraducidoSeleccionBtn: MaterialButton
     private lateinit var traducirBtn: MaterialButton
     private lateinit var bregresar : ImageView
+    private lateinit var db: FirebaseFirestore
 
     companion object{
         //para imprimir logs
@@ -103,6 +106,7 @@ class VistaTraductor : AppCompatActivity() {
     private fun iniciarTraduccion(){
         progressDialog.setMessage("Procesando el modelo de lenguaje")
         progressDialog.show()
+        db = FirebaseFirestore.getInstance()
 
         translatorOptions = TranslatorOptions.Builder()
             .setSourceLanguage(sourceLanguageCode)
@@ -128,6 +132,22 @@ class VistaTraductor : AppCompatActivity() {
                         progressDialog.dismiss()
 
                         idiomaTraducido.text = translatedText
+
+                        val datos= hashMapOf(
+                            "Traducir" to idiomaBase.text.toString(),
+                            "Traducido" to idiomaTraducido.text.toString()
+                        )
+                        val bundle=intent.extras
+                        val user= bundle?.getString("Usuario")
+                        if (user != null) {
+                            db.collection(user)
+                                .document()
+                                .set(datos)
+                                .addOnSuccessListener {
+                                    Toast.makeText(this, "Añadido al historial", Toast.LENGTH_LONG).show()
+                                }
+                        }
+
                     }
                     .addOnFailureListener{ e->
                         progressDialog.dismiss()
