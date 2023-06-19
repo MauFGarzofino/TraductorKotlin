@@ -28,16 +28,15 @@ class UI : AppCompatActivity() {
             startActivity(intent)
         }
         bVocabulario.setOnClickListener {
-            val intent = Intent(this@UI, MainActivity::class.java)
-            startActivity(intent)
+
         }
         bHist.setOnClickListener {
             val intent = Intent(this@UI, MainActivity::class.java)
+            intent.putExtra("Usuario",user)
             startActivity(intent)
         }
         bJuegos.setOnClickListener {
-            val intent = Intent(this@UI, MainActivity::class.java)
-            startActivity(intent)
+
         }
     }
 }
