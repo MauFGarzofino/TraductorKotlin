@@ -68,7 +68,7 @@ class Login : AppCompatActivity() {
                     progressBar.visibility = View.GONE
                     if (task.isSuccessful) {
                         Toast.makeText(baseContext, "Sesion Iniciada", Toast.LENGTH_SHORT,).show()
-                        val intent= Intent(this@Login, UI::class.java)
+                        val intent= Intent(this@Login, AgregarNombre::class.java)
                         startActivity(intent)
                         finish()
                     } else {

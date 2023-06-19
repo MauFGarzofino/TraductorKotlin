@@ -40,10 +40,10 @@ class VistaTraductor : AppCompatActivity() {
 
 
     //Seleccionamos los idiomas código y tpitulo
-    private var sourceLanguageCode = "en"
-    private var sourceLanguageTitle = "English"
-    private var targetLanguageCode = "ur"
-    private var targetLanguageTitle = "Urdu"
+    private var sourceLanguageCode = "es"
+    private var sourceLanguageTitle = "Español"
+    private var targetLanguageCode = "en"
+    private var targetLanguageTitle = "English"
 
     private lateinit var  translatorOptions: TranslatorOptions
     private lateinit var translator: Translator

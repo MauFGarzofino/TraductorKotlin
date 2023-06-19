@@ -8,6 +8,7 @@
     <string name="click_to_register">REGISTRARSE</string>
     <string name="logout">CERRAR SESIÓN</string>
     <string name="reg_strate">REGISTRARSE</string>
+    <string name="name">Nombre</string>
 
     <string name="work">Traductor</string>
     <string name="vocabulario">Vocabulario</string>
