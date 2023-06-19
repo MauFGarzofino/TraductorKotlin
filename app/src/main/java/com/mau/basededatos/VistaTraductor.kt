@@ -220,7 +220,6 @@ class VistaTraductor : AppCompatActivity() {
             Log.d(TAG, "idiomaTraducidoSeleccion: targetLanguageTitle: $targetLanguageTitle")
             false
         }
-
     }
 
     private fun showToast(message: String){
