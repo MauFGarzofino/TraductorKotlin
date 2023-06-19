@@ -3,9 +3,8 @@ package com.mau.basededatos
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
 import android.widget.LinearLayout
+
 
 class UI : AppCompatActivity() {
 
@@ -27,7 +26,7 @@ class UI : AppCompatActivity() {
             val intent = Intent(this@UI, VistaTraductor::class.java)
             startActivity(intent)
         }
-        bVocabulario.setOnClickListener {view->
+        bVocabulario.setOnClickListener {view ->
             val intent = Intent(this@UI, Dictionary::class.java)
             startActivity(intent)
         }
