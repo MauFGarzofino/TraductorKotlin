@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,17 +8,25 @@
     android:background="@drawable/splash"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/regresar"
+        android:layout_width="77dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/back" />
+
     <TextView
+        android:id="@+id/QuestionNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/QuestionNumber"
+        android:layout_marginTop="15dp"
         android:text="@string/question_number"
-        android:layout_marginTop="30dp"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
         android:textAlignment="center"
+        android:textColor="#ffffff"
         android:textSize="20sp"
-        >
+        android:textStyle="bold">
 
     </TextView>
 

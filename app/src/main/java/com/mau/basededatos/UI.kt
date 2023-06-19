@@ -13,7 +13,7 @@ class UI : AppCompatActivity() {
     private lateinit var bVocabulario: LinearLayout
     private lateinit var bHist: LinearLayout
     private lateinit var bJuegos: LinearLayout
-    private lateinit var bsalirCuenta: ImageView
+    private lateinit var bsalirCuenta: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ui)

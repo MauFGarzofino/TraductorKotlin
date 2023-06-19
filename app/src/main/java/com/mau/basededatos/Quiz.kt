@@ -1,7 +1,9 @@
 package com.mau.basededatos
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
@@ -29,6 +31,8 @@ class Quiz : AppCompatActivity() {
     private var currentOptionB = 0
     private var currentOptionC = 0
     private var currentOptionD = 0
+    //
+    private lateinit var bregresar : ImageView
 
     val questionBank = arrayOf(
         Answerclass(R.string.question_1, R.string.question1_A, R.string.question1_B, R.string.question1_C, R.string.question1_D, R.string.answer_1),
@@ -89,7 +93,15 @@ class Quiz : AppCompatActivity() {
             checkAnswer(currentOptionD)
             updateQuestion()
         }
+
+        bregresar = findViewById(R.id.regresar)
+
+        bregresar.setOnClickListener { view ->
+            val intent = Intent(this@Quiz, UI::class.java)
+            startActivity(intent)
+        }
     }
+
 
     private fun checkAnswer(userSelection: Int) {
         val correctAnswer = getString(questionBank[currentIndex].getAnswerid())

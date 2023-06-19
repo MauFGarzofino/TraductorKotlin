@@ -1,12 +1,14 @@
 package com.mau.basededatos
 
 import android.app.ProgressDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Display.Mode
 import android.view.Menu
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.TextView
 import android.widget.Toast
@@ -26,6 +28,7 @@ class VistaTraductor : AppCompatActivity() {
     private lateinit var idiomaBaseSeleccionBtn: MaterialButton
     private lateinit var idiomaTraducidoSeleccionBtn: MaterialButton
     private lateinit var traducirBtn: MaterialButton
+    private lateinit var bregresar : ImageView
 
     companion object{
         //para imprimir logs
@@ -73,6 +76,12 @@ class VistaTraductor : AppCompatActivity() {
         }
         traducirBtn.setOnClickListener {
             validateData()
+        }
+
+        bregresar = findViewById(R.id.regresar)
+        bregresar.setOnClickListener { view->
+            val intent = Intent(this@VistaTraductor, UI::class.java)
+            startActivity(intent)
         }
     }
 
